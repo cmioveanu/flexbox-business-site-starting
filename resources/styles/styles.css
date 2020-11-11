@@ -1,0 +1,270 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+
+
+
+
+body {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+ 
+    letter-spacing: 1px;
+    font-weight: normal;
+    word-spacing: 0.2em;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+
+/* ------------- Logo and nav ------------- */
+
+#navBar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+#navBar nav ul {
+    list-style-type: none;
+}
+
+#navBar nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+
+
+/* ------------- Banner ------------- */
+
+#about {
+    background-image: url("../images/splash.jpg");
+    background-position: center;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 2.5%;
+    
+}
+
+#about h2 {
+    font-size: 7rem;
+}
+
+#about h2 span {
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+/* ------------- Mission Statement ------------- */
+
+
+
+#missionStatement {
+    background-color: black;
+    color: white;
+    padding: 5%;
+    
+}
+
+#missionStatement p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+
+/* ------------- Products ------------- */
+
+
+
+#products {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5% 0 5% 0;
+}
+
+
+
+.productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.productsContainer div {
+    max-width: 300px;
+    margin: 15px;
+}
+
+
+
+
+
+/* ------------- Inspirational quote ------------- */
+
+
+
+#inspirationalQuote {
+    background-color: black;
+    color: white;
+    padding: 5%;
+    
+}
+
+#inspirationalQuote q {
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-style: italic;
+    display: block;
+    max-width: 800px;
+}
+
+
+
+
+
+
+/* ------------- Our Team ------------- */
+
+#ourTeam {
+    padding: 2.5% 0 5% 0;
+}
+
+.ourTeamSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#ourTeam p {
+    font-style: italic;
+    letter-spacing: 1px;;
+
+}
+
+#ourTeam h3 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* ------------- Contact Us ------------- */
+#contactUs {
+    background-color: black;
+    color: white;
+    padding: 5%;
+
+}
+
+#contactUsForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    text-align: left;
+    border: none;
+}
+
+input, label, textarea {
+    border: none;
+    width: 100%;
+    
+}
+
+input, textarea {
+    margin-bottom: 1.5rem;
+    margin-top: 0.4rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 820px) {
+    
+    #navBar {
+        padding: 0 5%;
+    }
+
+    #navBar nav ul {
+        min-width: 150px;
+        text-align: right;
+    }
+
+    #navBar nav ul li {
+        display: block;
+    }
+
+    #about {
+        min-height: 500px;
+    }
+    
+    #about h2 {
+        font-size: 3rem;
+    }
+
+    #about h2 span {
+        font-size: 2rem;
+    }
+
+    #missionStatement {
+        padding: 10% 5%;
+    }
+
+    #missionStatement p {
+        font-size: 1.5rem;
+    }
+}
